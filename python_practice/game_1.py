@@ -11,7 +11,7 @@ your_final_hp = your_hp - my_power
 # 定义一个 fight 的函数
 def fight():
 # 定义4个变量 我的血量 我的攻击力 你的血量 你的攻击力
-    my_hp = 1000
+    my_hp = 1100
     my_power = 200
     your_hp = 1000
     your_power = 200
@@ -21,13 +21,23 @@ def fight():
         my_hp = my_hp - your_power
         #你的血量=你的血量-我的攻击力
         your_hp = your_hp - my_power
-        #如果我的血量小于等于0 输出 我输了
+        #如果我的血量小于等于0
         if my_hp <= 0 :
+            # 输出我的剩余血量
+            print("我的血量剩余:", my_hp)
+            # 输出你的剩余血量
+            print("你的血量剩余:", your_hp)
+            # 输出我输了
             print("我输了")
             #跳出循环
             break
-            #如果你的血量小于等于0 输出 你输了
+            #如果你的血量小于等于0
         elif your_hp <=0 :
+            # 输出我的剩余血量
+            print("我的血量剩余:", my_hp)
+            # 输出你的剩余血量
+            print("你的血量剩余:", your_hp)
+            # 输出你输了
             print("你输了")
             # 跳出循环
             break
